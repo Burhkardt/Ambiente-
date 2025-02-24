@@ -1,0 +1,90 @@
+::placeholder {
+  text-align: center;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.background {
+  background-color: #2cc295;
+  flex: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  border: 0;
+  z-index: 1;
+}
+.Busca {
+  position: fixed;
+  top: 5%;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  left: 15%;
+
+  background-color: black;
+  background-image: url("../../assets/Imagens/lupa.png") no-repeat scroll;
+  border-color: transparent;
+  height: 5%;
+  width: 65%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+}
+.Busca :active {
+  text-align: start;
+}
+.searchicon {
+  position: fixed;
+  object-fit: contain;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  height: 30px;
+  left: 16%;
+  top: 5.7%;
+}
+.contentBox {
+  position: fixed;
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  grid-gap: 20px; /* Space between items */
+  left: 15%;
+  top: 13%;
+  width: 75%;
+  height: 77%;
+  z-index: 5;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 10px; /* Optional: Add padding inside the container */
+}
+
+.imagibox {
+  position: relative;
+  margin-bottom: 20px; /* Add space between items */
+}
+
+.imagibox img {
+  object-fit: cover;
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.imagibox img:hover {
+  width: 155px;
+  height: 205px;
+  cursor: pointer;
+}

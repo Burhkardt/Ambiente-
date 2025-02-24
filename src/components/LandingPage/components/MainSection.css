@@ -1,0 +1,38 @@
+.main-section {
+  background-color: #2cc295;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px; /* Space between text and logo */
+}
+
+.text-content {
+  max-width: 60%;
+}
+
+.text-content h1 {
+  font-size: 36px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: black;
+}
+
+.main-logo {
+  max-width: 30%; /* Adjust as needed for logo size */
+  height: auto;
+  object-fit: contain;
+}

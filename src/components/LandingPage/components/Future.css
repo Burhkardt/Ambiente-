@@ -1,0 +1,66 @@
+body {
+  width: 100%;
+  border: 0;
+  margin: 0;
+}
+.imagem {
+  object-fit: cover;
+  width: 100vw;
+  height: 500px;
+  background-color: black;
+  margin-top: -175px;
+  z-index: 10;
+}
+.journey-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.journey-content {
+  display: flex; /* Enables side-by-side layout */
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* Adjust width as needed */
+}
+
+.journey-title {
+  flex: 0.5; /* Allow the title to take up one column */
+  text-align: left; /* Align text to the left */
+  padding-left: 20px; /* Optional: Add some space from the left */
+}
+.journey-title h2 {
+  width: 85%;
+}
+
+.bar {
+  width: 2px; /* Thin bar */
+  height: 100px; /* Height of the bar */
+  background-color: #fff; /* White bar, can change the color */
+  margin: 0 20px; /* Space around the bar */
+}
+
+.journey-btn {
+  flex: 1; /* Allow the button to take up one column */
+  text-align: left; /* Align button text to the left */
+  padding-left: 20px; /* Optional: Add some space from the left */
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+.start-btn {
+  padding: 25px 0px;
+  background-color: black; /* Black background */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 80%; /* Ensure the button fills its container */
+  margin-top: 20px; /* Space between the button and other content */
+}
+
+.start-btn:hover {
+  background-color: #333; /* Button hover effect */
+}

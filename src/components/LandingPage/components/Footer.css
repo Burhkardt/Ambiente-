@@ -1,0 +1,140 @@
+.footer-container {
+  background-color: #000; /* Black footer */
+  color: white;
+  padding: 20px; /* Equal padding all around */
+  font-size: 14px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Side-by-side alignment */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Footer Left Section */
+.footer-left {
+  flex: 1; /* Take up equal space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 100px;
+  text-align: start;
+}
+
+.footer-logo {
+  width: 60px; /* Adjust the size as needed */
+  margin-bottom: 15px;
+}
+
+.footer-left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-left li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Footer Right Section */
+.footer-right {
+  flex: 1; /* Take up equal space */
+  display: flex;
+  flex-direction: column; /* Stack elements */
+  align-items: flex-end; /* Align to the right */
+  padding-right: 100px;
+}
+
+/* Newsletter */
+.newsletter-container {
+  display: flex;
+  align-items: center; /* Align input and button */
+  margin-bottom: 10px;
+  width: 100%; /* Ensure proper alignment */
+  justify-content: flex-end; /* Right-align the content */
+}
+
+.newsletter-container input {
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid white;
+  outline: none;
+  font-size: 14px;
+  color: white;
+  background-color: black; /* Black background */
+  max-width: 250px; /* Prevent stretching */
+  height: 16px;
+}
+
+.newsletter-container button {
+  background-color: black; /* Black background */
+  color: white;
+  border: 1px solid white;
+  border-radius: 0 5px 5px 0;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 34px;
+}
+
+.newsletter-container button:hover {
+  background-color: #444; /* Slightly lighter hover color */
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; /* Align text and checkbox to the right */
+  text-align: right;
+  max-width: 300px; /* Prevent overflow */
+  font-size: 10px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  border-top: 2px solid white;
+  padding-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack the content */
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center; /* Center-align on small screens */
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-container input,
+  .newsletter-container button {
+    width: 100%; /* Full-width for small screens */
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .checkbox-container {
+    justify-content: center; /* Center-align on small screens */
+    text-align: center;
+  }
+}

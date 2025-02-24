@@ -1,0 +1,64 @@
+.features {
+  background-color: #2cc295;
+  cursor: default;
+}
+
+.features-bar {
+  background-color: black; /* The black bar */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  justify-content: space-evenly; /* Center the text horizontally */
+  padding: 20px 0; /* Optional: Vertical padding for bar height */
+  position: relative;
+  left: 0;
+}
+
+.features-bar span {
+  color: #2cc295; /* Text color */
+  font-size: 18px; /* Adjust font size as needed */
+  text-transform: uppercase; /* Optional: Make text uppercase */
+  margin: 0 30px; /* Space between items */
+  cursor: default; /* Make it clear these are not clickable */
+}
+
+.tab {
+  text-align: center;
+  flex: 1;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.feature {
+  max-width: 300px;
+  background-color: #2cc295;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 20px; /* Adds separation from description */
+}
+
+.feature-description {
+  position: relative;
+  font-size: 14px;
+  color: white;
+  line-height: 1.5;
+  background-color: #03624c;
+  padding: 40px;
+  text-align: left;
+  border-radius: 30px;
+  z-index: 15;
+}
